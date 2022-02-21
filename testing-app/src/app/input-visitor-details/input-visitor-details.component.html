@@ -1,0 +1,77 @@
+<div class="search-Wrapper">
+
+  <mat-card fxLayout="column" fxLayoutGap="16px">
+
+    <mat-card-title>
+
+      <div fxFlex fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="start center">
+        <small>{{operationFlag ? 'Edit Visitor' : "Add Visitor"}}</small>
+      </div>
+
+    </mat-card-title>
+
+    <mat-divider class="submat"></mat-divider>
+
+    <mat-card-content fxLayout="column" fxLayoutGap="16px">
+
+      <form [formGroup]="visitorForm">
+
+        <div fxLayout="column">
+
+          <div fxLayout="row" fxLayoutAlign="start center">
+
+            <p fxFlex="10%" fxFlex.md="10%" fxFlex.xs="30%">Name :</p>
+
+            <div class="input-search-div">
+              <input type="text" class="input-search" placeholder="Visitor name..." formControlName="name">
+            </div>
+
+
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center">
+
+            <p fxFlex="10%" fxFlex.md="10%" fxFlex.xs="30%">Phone Number :</p>
+
+            <div class="input-search-div">
+              <input type="text" class="input-search" placeholder="Visitor phone number..." formControlName="phone_number">
+            </div>
+
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start center">
+
+            <p fxFlex="10%" fxFlex.md="10%" fxFlex.xs="30%">Queue Line :</p>
+
+            <mat-form-field>
+            <mat-select formControlName="queue_line" required>
+              <mat-option value="A" selected>A</mat-option>
+              <mat-option value="B">B</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          </div>
+
+        </div>
+      </form>
+
+    </mat-card-content>
+
+
+
+
+    <mat-card-footer style="padding: 16px;" fxLayout="row" fxLayoutAlign="end" fxLayoutGap="16px">
+
+      <button fxFlexAlign="end" mat-raised-button color="accent" (click)="cancel()">
+        <mat-icon>cancel</mat-icon> &nbsp;
+        <span>Cancel</span>
+      </button>
+
+      <button fxFlexAlign="end" mat-raised-button color="accent" (click)="save()">
+        <mat-icon>save</mat-icon> &nbsp;
+        <span>Save</span>
+      </button>
+
+    </mat-card-footer>
+
+  </mat-card>
+</div>

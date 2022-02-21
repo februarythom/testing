@@ -1,0 +1,30 @@
+<div fxLayout="column" fxLayoutGap="16px" class="page-wrapper">
+
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+
+    <button mat-mini-fab [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="changePage('visitor-list')">Visitors</button>
+    </mat-menu>
+
+    <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="space-between center">
+
+      <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="space-between center">
+        <span>{{todayDate | customDate}}</span>
+        <mat-icon aria-hidden="false">bug_report</mat-icon>
+        <mat-icon aria-hidden="false">live_help</mat-icon>
+      </div>
+
+      <div fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="space-between center">
+        <mat-icon aria-hidden="false">person</mat-icon>
+        <span>Admin CV. MACAN KEMBAR</span>
+      </div>
+    </div>
+
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>

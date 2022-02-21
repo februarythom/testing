@@ -1,0 +1,21 @@
+.input-search-div {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 3px 0px 3px 8px;
+  cursor: pointer;
+  min-width: 200px;
+  overflow: hidden;
+  max-height: 30px;
+}
+.input-search {
+
+  max-height: 22px;
+
+  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+  border: 0;
+  color: rgba(0, 0, 0, 0.87);
+
+  &:focus {
+      outline: none;
+  }
+}

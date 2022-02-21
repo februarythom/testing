@@ -1,0 +1,7 @@
+.page-wrapper {
+  margin-bottom: 16px;
+}
+.mat-fab:not([class*=mat-elevation-z]),
+.mat-mini-fab:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}

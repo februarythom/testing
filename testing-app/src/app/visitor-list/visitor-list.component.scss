@@ -1,0 +1,126 @@
+:host {
+  width: 100%;
+}
+.input-search-div {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 3px 0px 3px 8px;
+  cursor: pointer;
+  min-width: 200px;
+  overflow: hidden;
+  max-height: 30px;
+}
+.input-search {
+
+  max-height: 22px;
+
+  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+  border: 0;
+  color: rgba(0, 0, 0, 0.87);
+
+  &:focus {
+      outline: none;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.table-wrapper {
+  overflow: auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  @media all and (max-width: 599px) {
+      margin: 0 -17px 0 -18px;
+      th.mat-column-action {
+          text-align: center;
+          padding-left: 0;
+      }
+      td.mat-column-action {
+          padding: 0 4px;
+      }
+  }
+}
+
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type,
+th.mat-header-cell:last-of-type {
+  padding-right: 0;
+}
+
+th.mat-column-no,
+th.mat-column-id,
+th.mat-column-name,
+th.mat-column-phone_number,
+th.mat-column-fullname,
+th.mat-column-createdAt,
+th.mat-column-queue_line,
+th.mat-column-owner,
+th.mat-column-action,
+th.mat-column-active {
+  background-color: #f5f5f5;
+}
+
+// td.mat-column-id,
+td.mat-column-name,
+td.mat-column-phone_number,
+td.mat-column-createdAt,
+td.mat-column-queue_line,
+td.mat-column-owner,
+th.mat-column-id,
+th.mat-column-name,
+th.mat-column-phone_number,
+th.mat-column-createdAt,
+th.mat-column-queue_line,
+th.mat-column-owner,
+th.mat-column-active {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+th.mat-column-action {
+  padding-left: 16px;
+}
+
+td.mat-column-id,
+th.mat-column-id,
+td.mat-column-no,
+th.mat-column-no {
+  width: 35px;
+}
+
+th.mat-column-action,
+td.mat-column-action {
+  width: 80px;
+}
+
+
+th.mat-column-queue_line,
+td.mat-column-queue_line {
+  width: 65px;
+  text-align: center;
+}
+
+th.mat-column-active {
+  text-align: center;
+}
+
+td.mat-column-active {
+  padding-left: 8px;
+}
+
+.mat-table-sticky:first-child {
+  border-right: 1px solid #e0e0e0;
+}
+
+.mat-table-sticky:last-child {
+  border-left: 1px solid #e0e0e0;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #fafafa;
+}

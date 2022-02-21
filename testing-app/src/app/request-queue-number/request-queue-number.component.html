@@ -1,0 +1,33 @@
+<div fxLayout="column" fxLayoutGap="8px">
+
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <h3 style="margin: 0;" mat-dialog-title>ALMEGATEX</h3>
+  </div>
+
+  <mat-divider style="position: relative!important;"></mat-divider>
+
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <span style="margin: 0; font-size: 30px;">No. Antrian Anda</span>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <h1 style="margin: 0; font-size: 60px;" >{{visitor.queue_line}}</h1>
+  </div>
+
+  <div mat-dialog-content fxLayout="column" fxLayoutGap="8px">
+
+    <ngx-barcode [bc-value]="visitor._id" [bc-display-value]="false"></ngx-barcode>
+
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <span style="margin: 0; font-size: 20px;">{{visitor.createdAt | customDate}}</span>
+    </div>
+
+    <mat-divider style="position: relative!important;"></mat-divider>
+
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <span style="margin: 0; font-size: 20px; text-align: center;">Budayakan Antri untuk kenyamanan <br> bersama <br>Terimakasih atas kunjungan anda.</span>
+    </div>
+
+  </div>
+
+</div>
